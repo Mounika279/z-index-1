@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        .container{
+            border: 1px solid white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            top:3vh;
+            left: 300px;
+            width:310px;
+            height: 600px;
+        }
+        .heading{
+            background-color: forestgreen;
+            width: 310px;
+            height: 50px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .menubar{
+            position: absolute;
+            top:2vh;
+            left:2vh;
+        }
+        .misscall{
+            position: absolute;
+            top:2vh;
+            left:35vh;
+        }
+        .pick{
+            display: inline-block;
+            border: 1px solid white;
+            height: 40px;
+            width: 160px;
+            background-color: white;
+        }
+       .drop{
+        display: inline-block;
+        border: 1px solid white;
+            height: 40px;
+            width: 142px;
+            background-color: dodgerblue; 
+       }
+       p{
+        border: 1px solid white;
+        width:310px;
+        text-align: center;
+        background-color: white;
+       }
+       .map{
+        position: relative;
+        top:-22vh;
+        z-index: -1;
+       }
+       .foot{
+        position: relative;
+        top:-23vh;
+        text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+       
+        border: 1px solid white;
+            height: 40px;
+            width: 310px;
+            background-color: dodgerblue;
+       }
+       .container1{
+        border: 3px solid gray;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: absolute;
+            top:3vh;
+            left: 450px;
+            width:310px;
+            height: 609px;
+       }
+       .menu{
+        position: absolute;
+        top:2vh;
+        left: 2vh;
+       }
+       .call{
+       position: relative;
+            top:2vh;
+            left:35vh;
+        }
+        .name{
+            position: relative;
+            left:13vh;
+            top:-3vh;
+            font-size: x-large;
+        }
+        .name1{
+            position:relative;
+            top:-6vh;
+            left:13vh;
+            font-size: xx-large;
+           color: white;
+        }
+       .phone{
+        position: relative;
+        top:-4vh;
+        left:1vh;
+       }
+       .nmbr{
+        position: relative;
+        top:-8vh;
+        left:13vh;
+       }
+.nmbr b::after {
+    content: "";
+    display: block;
+    width: 50%; 
+    margin-top: 5px; 
+    border-bottom: 1px solid black; 
+}
+       .edit{
+        position: relative;
+        top:-12vh;
+        left:36vh;
+       }
+       .email{
+        position: relative;
+        top:-4vh;
+        left:1vh;
+       }
+       .emailid{
+        position: relative;
+        top:-8vh;
+        left:10vh;
+       }
+.emailid b::after {
+    content: "";
+    display: block;
+    width: 60%; 
+    margin-top: 5px; 
+    border-bottom: 1px solid black; 
+}
+       .edit{
+        position: relative;
+        top:-12vh;
+        left:36vh;
+       }
+       .r2{
+        position: relative;
+        top:-3vh;
+       }
+       .pswd{
+        position: relative;
+        top:-4vh;
+        left:1vh;
+       }
+       .pwd{
+        position: relative;
+        top:-8vh;
+        left:10vh;
+       }
+    .pwd b::after {
+    content: "";
+    display: block;
+    width: 60%; 
+    margin-top: 5px; 
+    border-bottom: 1px solid black; 
+}
+       .edit{
+        position: relative;
+        top:-12vh;
+        left:36vh;
+       }
+       .r3{
+        position: relative;
+        top:-10vh;
+        height: 60px; 
+       }
+       .log{
+        position: relative;
+        top:2vh;
+        left:6vh;
+       }
+       .save{
+        position: relative;
+        top:-4vh;
+        left:29vh;
+       }
+       .line{
+        position: relative;
+        top:-1vh;
+        left:22vh;
+       }
+       .footer{
+        background:linear-gradient(to bottom, #ff00cc, #0022ff); 
+        position: relative;
+        left:62vh;
+        top:-30vh;
+        height: 50px;;
+       }
+      
+    
+ 
+
+
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading" style="font-size:large;">Book now</div>
+        <div class="menubar"><img src="./menu.png"height="25px" width="40px"></div>
+        <div class="misscall"><img src="./missed-call.png"height="25px" width="40px"></div>
+        <div class="pick"><b>PICKUP</b></div>
+        <div class="drop"><b>DROP OFF</b></div>
+        <div class="para"><p>Parampara - Flavours Of India (Banjara Hills), Road Number 1, opp. City Center, Naveen Nagar, Banjara Hills, Hyderabad, Telangana</p></div>
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30455.30877413187!2d78.41516861694808!3d17.41593369244758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9728e7c230a5%3A0xbf59752f5f7caa0!2sBanjara%20Hills%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1704360889827!5m2!1sen!2sin" width="310" height="545" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="foot"><b>NEXT</b></div>
+<div class="container1">
+    <div class="menu"><img src="./burger-menu.png" height="30px" width="40px"></div>
+    <div class="call"><img src="./miss call.png" height="30px" width="40px"></div>
+    <div class="name">My Account</div>
+    <div class="image"><img src="./contact pic.jpg" width="310" height="300"></div>
+    <div class="name1"><b>Prabhas</b></div>
+        <div class="r1">
+        <div class="phone"><img src="./mobile-phone.png"height="30px" width="40px"></div>
+        <div class="nmbr"><b>+91 9834676523</b></div>
+        <div class="edit"><img src="./edit.png"height="30px" width="40px"></div></div>
+        <div class="r2">
+        <div class="email"><img src="./email.png"height="30px" width="40px"></div>
+        <div class="emailid"><b>prabhas765@gmail.com</b></div>
+        <div class="edit"><img src="./edit.png"height="30px" width="40px"></div></div>
+        <div class="r3">
+            <div class="pswd"><img src="./key-skills.png"height="30px" width="40px"></div>
+            <div class="pwd"><b>*******</b></div>
+            <div class="edit"><img src="./edit.png"height="30px" width="40px"></div></div>
+        </div>
+        <div class="footer">
+        <div class="log"><b>LOGOUT</b></div>
+        <div class="line"><b>|</b></div>
+        <div class="save"><b>SAVE</b></div>
+    </div>
+        
+              
+           
+
+
+
+
+
+        </div>
+  
+</div>
+
+
+
+
+
+
+    </div>
+</body>
+</html>
